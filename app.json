@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "Kwa60",
+    "slug": "kwa60-delivery",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "android": {
+      "package": "za.co.kwamakhistore.kwa60",
+      "adaptiveIcon": {
+        "backgroundColor": "#C9001C"
+      }
+    },
+    "splash": {
+      "backgroundColor": "#C9001C"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Kwa60 uses your location during delivery so the customer can follow the driver."
+        }
+      ]
+    ]
+  }
+}
