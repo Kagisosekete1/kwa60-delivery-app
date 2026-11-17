@@ -12,7 +12,10 @@
       }
     },
     "splash": {
-      "backgroundColor": "#C9001C"
+      "image": "./assets/kwa-sixty-logo.png",
+      "imageWidth": 220,
+      "resizeMode": "contain",
+      "backgroundColor": "#FFF0AA"
     },
     "plugins": [
       [
