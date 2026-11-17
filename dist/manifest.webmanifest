@@ -1,24 +1,17 @@
 {
-  "id": "./",
+  "id": "/",
   "name": "Kwa60 · Kwamakhi Store",
   "short_name": "Kwa60",
   "description": "Shop Kwamakhi Store favourites and arrange local delivery.",
-  "start_url": "./index.html",
-  "scope": "./",
+  "start_url": "/index.html",
+  "scope": "/",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#fff0aa",
+  "background_color": "#710c17",
   "theme_color": "#710c17",
-  "categories": [
-    "shopping",
-    "food"
-  ],
+  "categories": ["shopping", "food"],
   "icons": [
-    {
-      "src": "./icons/kwa60-icon.svg",
-      "sizes": "192x192 512x512",
-      "type": "image/svg+xml",
-      "purpose": "any maskable"
-    }
+    { "src": "/icons/kwa60-icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/kwa60-icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
   ]
 }
