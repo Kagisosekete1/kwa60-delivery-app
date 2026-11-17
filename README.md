@@ -21,3 +21,7 @@ Open **Profile → Driver dashboard**. The driver sees the customer’s current 
 After the till step, the Android app requests foreground location and opens an in-app map with the driver and delivery address. While Kwa60 is open, the driver marker updates and the customer Orders screen can show that map on the same device. **Cross-device customer tracking and real customer orders require a live dispatch backend**; none is configured in this workspace. Turn-by-turn directions can also open in the phone’s maps app.
 
 The Android map uses the requested [Snazzy Info Window](https://github.com/atmist/snazzy-info-window) on Google Maps when `EXPO_PUBLIC_GOOGLE_MAPS_API_KEY` is configured in `.env` (start from `.env.example`). Snazzy Info Window decorates Google Maps JavaScript markers; it does not provide map tiles or routing. Without a Google key, the app falls back to an OpenStreetMap map.
+
+### Delivery maps
+
+The app uses Leaflet with OpenStreetMap tiles, the driver's GPS location, the saved delivery pin, and a road route from the OSRM route service. The public OSRM endpoint is a demonstration service intended for light use; production delivery volumes should move to a hosted routing provider or a self-hosted OSRM instance. OpenStreetMap map tiles require internet access and attribution. The address picker requests current device location first; drivers must allow location access while the delivery is active.
